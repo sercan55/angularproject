@@ -2,12 +2,21 @@
 <!-- location.href = "https://testoim.uedas.com.tr"; -->
 <!-- </script> -->
 
-<button  onclick="onDeviceReady()">deneme</button>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <div>
+            <script type="text/javascript" charset="utf-8">
+                document.addEventListener("deviceready", onDeviceReady, false);
 
-<script> 
-function onDeviceReady() {
-
-navigator.app.loadUrl('https://testoim.uedas.com.tr', { openExternal:false });
-
-}
-</script> 
+                function onDeviceReady() {
+                    window.location.href = 'https://testoim.uedas.com.tr';
+                }
+            </script>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
