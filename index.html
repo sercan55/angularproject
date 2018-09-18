@@ -2,4 +2,12 @@
 <!-- location.href = "https://testoim.uedas.com.tr"; -->
 <!-- </script> -->
 
-<a href="#" onclick="window.open('https://testoim.uedas.com.tr', '_system');">www.kidzout.com</a>
+<script> 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+
+navigator.app.loadUrl('https://testoim.uedas.com.tr', { openExternal:false });
+
+}
+</script> 
