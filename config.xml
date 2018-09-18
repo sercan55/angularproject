@@ -7,17 +7,17 @@
 
 
     <name>UEDAŞ Mobil İşlemler</name>
-    <preference name="stay-in-webview" value="true" />
+
 
     <description>
         Online Abonelik, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
     </description>
-    <access origin="*" browserOnly="true" subdomains="true" />
+
 
     <author href="http://www.infopark.com.tr" email="bilgi@infopark.com.tr">
         Infopark
     </author>
-    <content src="index.html" />
+
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -44,12 +44,14 @@
     <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <preference name="android-windowSoftInputMode" value="adjustResize" />
+
+	<gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 	
     <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
-    <allow-navigation href="https://google.com/*" />
+
 
    <!--
         Define a specific version of PhoneGap to build into your app.
@@ -76,7 +78,6 @@
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" version="~1" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
@@ -144,5 +145,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
 
 </widget>
