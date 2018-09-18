@@ -1,23 +1,20 @@
-@@ -3,143 +3,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.infopark.onlineabonelik"
         version   = "1.0.7">
 
-
     <name>UEDAŞ Mobil İşlemler</name>
-
 
     <description>
         Online Abonelik, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
     </description>
 
-
     <author href="http://www.infopark.com.tr" email="bilgi@infopark.com.tr">
         Infopark
     </author>
-
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -51,7 +48,6 @@
     <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
-
 
    <!--
         Define a specific version of PhoneGap to build into your app.
@@ -90,6 +86,10 @@
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
+
+    <!-- Define app icon for each platform. -->
+    
+
     <!-- Define app splash screen for each platform. -->
 	<!--
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
@@ -106,9 +106,7 @@
 -->
 
 <preference name="SplashScreenDelay" value="5000" />
-
-
-
+	
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>107</string>
     </gap:config-file>
@@ -145,6 +143,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-
 
 </widget>
