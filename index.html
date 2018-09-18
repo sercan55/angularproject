@@ -1,3 +1,29 @@
-<script>
-location.href = "https://testoim.uedas.com.tr";
-</script>
+<!-- <script> -->
+<!-- location.href = "https://testoim.uedas.com.tr"; -->
+<!-- </script> -->
+
+<html>
+  <head>
+    <title>window.open Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        // external url
+        var ref = window.open(encodeURI('https://testoim.uedas.com.tr'), '_blank', 'location=yes');
+        // relative document
+        ref = window.open('next.html', '_self');
+    }
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
