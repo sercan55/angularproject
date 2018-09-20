@@ -137,6 +137,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+	<allow-navigation href="https://testoim.uedas.com.tr" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
