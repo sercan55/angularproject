@@ -108,6 +108,11 @@
 
 <preference name="SplashScreenDelay" value="5000" />
 	
+	<gap:splash src="capture.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="capture.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="capture.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="capture.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+	
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>107</string>
     </gap:config-file>
