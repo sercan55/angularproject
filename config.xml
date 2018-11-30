@@ -24,14 +24,6 @@
     -->
     <preference name="permissions"  value="none"/>
 	
-     <feature name="http://api.phonegap.com/1.0/battery"/>
-    <feature name="http://api.phonegap.com/1.0/camera"/>
-    <feature name="http://api.phonegap.com/1.0/contacts"/>
-    <feature name="http://api.phonegap.com/1.0/file"/>
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
-    <feature name="http://api.phonegap.com/1.0/media"/>
-    <feature name="http://api.phonegap.com/1.0/network"/>
-    <feature name="http://api.phonegap.com/1.0/notification"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -153,6 +145,13 @@
 	<allow-navigation href="https://testoim.uedas.com.tr" />
     <platform name="android">
         <allow-intent href="market:*" />
+		 <config-file target="AndroidManifest.xml" parent="/*">
+
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    </config-file>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
