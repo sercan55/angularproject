@@ -62,6 +62,19 @@
 
 <feature name="http://api.phonegap.com/1.0/network" />
     <feature name="http://api.phonegap.com/1.0/device" />
+	    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+
+    <gap:plugin name="cordova-plugin-device" source="npm" />
+
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
+
+    <plugin name="org.apache.cordova.camera" spec="2.2.0" />
+
+    <plugin name="org.apache.cordova.contacts" spec="2.1.0" />
+
+    <plugin name="org.apache.cordova.geolocation" spec="2.2.0" />
+
+    <gap:plugin name="cordova-plugin-actionsheet" source="npm" />
     <!-- Plugins -->
 	
 	
