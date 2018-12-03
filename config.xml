@@ -16,13 +16,9 @@
         Infopark
     </author>
 
-<feature name="http://api.phonegap.com/1.0/geolocation"/>
-   <feature name="http://api.phonegap.com/1.0/network"/>
-   <feature name="http://api.phonegap.com/1.0/geolocation"/>
-   <feature name="http://api.phonegap.com/1.0/file"/>
-   <feature name="http://api.phonegap.com/1.0/camera"/>
-   <feature name="http://api.phonegap.com/1.0/media"/>
-   <feature name="http://api.phonegap.com/1.0/device"/>
+<feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+</feature>
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
