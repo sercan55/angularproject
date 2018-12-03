@@ -24,10 +24,8 @@
     -->
 
 	
-	<preference name="permissions" value="none"/> 
-	<uses-permission android:name="android.permission.RECORD_VIDEO" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<preference name="permissions" value="true"/> 
+
 
     <!-- to enable individual permissions use the following examples -->
 
