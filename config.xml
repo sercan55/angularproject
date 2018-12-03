@@ -25,10 +25,6 @@
 
 	
 	<preference name="permissions" value="none"/> 
-<config-file platform="android" parent="/manifest" mode="merge">
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-</config-file>
-
 
     <!-- to enable individual permissions use the following examples -->
 
