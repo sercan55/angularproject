@@ -24,7 +24,7 @@
     -->
 
 	
-	<preference name="permissions" value="none"/>
+	<!-- <preference name="permissions" value="none"/> -->
 
     <!-- to enable individual permissions use the following examples -->
 
@@ -148,9 +148,6 @@
 	<allow-navigation href="https://testoim.uedas.com.tr" />
     <platform name="android">
         <allow-intent href="market:*" />
-            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-            <uses-feature android:name="android.hardware.location.gps" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
