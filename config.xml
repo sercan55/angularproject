@@ -24,7 +24,10 @@
     -->
 
 	
-	<preference name="permissions" value="true"/> 
+	<preference name="permissions" value="none"/> 
+	 <preference name="android.permission.ACCESS_COARSE_LOCATION" />
+  <preference name="android.permission.ACCESS_FINE_LOCATION" />
+  <preference name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
 
     <!-- to enable individual permissions use the following examples -->
