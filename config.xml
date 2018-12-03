@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.infopark.onlineabonelik" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
+	    <name>UEDAS Mobil Islemler</name>
+
+    <description>
+        Online Abonelik, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
+    </description>
+
+    <author href="http://www.infopark.com.tr" email="bilgi@infopark.com.tr">
+        Infopark
+    </author>
+
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <!-- Set DisallowOverscroll to true to avoid bounce effect -->
@@ -12,6 +23,10 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+	
+		<icon src="uedasicon.png" />
+
+	
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -92,17 +107,10 @@
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-    <name>HelloCordova</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://*.websitename.com" />
-     <allow-navigation href="https://*.youtube.com" />
+<allow-navigation href="https://testoim.uedas.com.tr" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
