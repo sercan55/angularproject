@@ -16,9 +16,7 @@
         Infopark
     </author>
 
-<feature name="Geolocation">
-    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
-</feature>
+
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
@@ -26,7 +24,11 @@
     -->
 
 	
-	 <!-- <preference name="permissions" value="none"/> -->
+	 <preference name="permissions" value="none"/>
+	 
+	 <feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+</feature>
 
 
     <!-- to enable individual permissions use the following examples -->
