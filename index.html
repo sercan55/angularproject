@@ -9,8 +9,13 @@
                 document.addEventListener("deviceready", onDeviceReady, false);
 
                 function onDeviceReady() {
-                    window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
+                    <!-- window.open('https://testoim.uedas.com.tr', '_self ', 'location=no'); -->
+					navigator.geolocation.getCurrentPosition(onSuccess, onError);
                 }
+				function onError(error) {
+        alert('Error please check your GPS on Settings: '    + error.code    + '\n' +
+              'Please Active Your GPS' + error.message + '\n');
+    }
             </script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
