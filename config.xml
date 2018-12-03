@@ -58,12 +58,11 @@
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
-<preference name="phonegap-version" value="cli-6.5.0" />
+<preference name="phonegap-version" value="cli-8.1.1" />
 
 <feature name="http://api.phonegap.com/1.0/network" />
     <feature name="http://api.phonegap.com/1.0/device" />
-	   <plugin name="cordova-plugin-network-information" source="npm" spec="1.2.1" />
-	   <plugin name="org.apache.cordova.geolocation" spec="2.2.0" />
+
 
     <!-- Plugins -->
 	
