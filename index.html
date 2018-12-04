@@ -9,14 +9,6 @@
                 document.addEventListener("deviceready", onDeviceReady, false);
 
                 function onDeviceReady() {
-				this.geo.getCurrentPosition({timeout: 30000})
-.then(location => {
-  console.log(location.coords)
-  //latitude:12.34567
-  //longitude:01.01010
-}.catch(error => {
-  console.log(error)
-}
                     window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
                 }
             </script>
