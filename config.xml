@@ -24,6 +24,10 @@
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
 
     <feature name="http://api.phonegap.com/1.0/network"/>
+	
+	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find things nearby</string>
+</edit-config>
 
     <!-- to enable individual permissions use the following examples -->
 
