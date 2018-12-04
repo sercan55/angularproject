@@ -7,10 +7,14 @@
         <div>
 		    <script type="text/javascript" charset="utf-8">
                 document.addEventListener("deviceready", onDeviceReady, false);
+				document.addEventListener("load", hazirla, false);
 
                 function onDeviceReady() {
                     window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
                 }
+				function hazirla(){
+				  alert(42);
+				}
             </script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
