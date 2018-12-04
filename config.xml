@@ -25,9 +25,6 @@
 
     <feature name="http://api.phonegap.com/1.0/network"/>
 	
-	<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-    <string>need location access to find things nearby</string>
-</edit-config>
 
     <!-- to enable individual permissions use the following examples -->
 
@@ -117,7 +114,7 @@
 
 <preference name="SplashScreenDelay" value="5000" />
 	
-	<!-- <gap:splash src="acilisvideo.mp4" type="video/mp4"       gap:platform="android" gap:qualifier="port-ldpi" /> -->
+ <gap:splash src="acilisvideo.mp4" type="video/mp4"       gap:platform="android" gap:qualifier="port-ldpi" /> 
     <!-- <gap:splash src="acilisvideo.mp4" type="video/mp4"      gap:platform="android" gap:qualifier="port-mdpi" /> -->
     <!-- <gap:splash src="acilisvideo.mp4" type="video/mp4"       gap:platform="android" gap:qualifier="port-hdpi" /> -->
     <!-- <gap:splash src="acilisvideo.mp4" type="video/mp4"     gap:platform="android" gap:qualifier="port-xhdpi" /> -->
