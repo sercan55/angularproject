@@ -9,7 +9,7 @@
 				document.addEventListener("deviceready", onDeviceReady, false);
 				
               function onDeviceReady() { 
-				window.geofence.initialize(function(){alert('init ok');}, function(){alert('init error');});
+				window.geofence.initialize(function(){console.log('init ok');}, function(){console.log('init error');});
               }					
             </script>
         </div>
