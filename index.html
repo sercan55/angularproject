@@ -10,7 +10,11 @@
 				
               function onDeviceReady() { 
 			  window.open('https://testoim.uedas.com.tr', '_self ', 'location=no'); 
-				window.geofence.receiveTransition  = function (notificationData) {  };
+				window.geofence.initialize().then(function () {
+       
+    }, function (error) {
+       
+    });
               }					
             </script>
         </div>
