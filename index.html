@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-    </head>
-    <body>
-        <div>
-		    <script type="text/javascript" charset="utf-8">
-				document.addEventListener("deviceready", onDeviceReady, false);
-                 function onDeviceReady() { 
-                    navigator.geolocation.getCurrentPosition(onSuccess, onError);
-                   }
-function onSuccess(position) {
+  <head>
+    <title>Geolocation Position Example</title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }
+
+    // Display `Position` properties from the geolocation
+    //
+    function onSuccess(position) {
         var div = document.getElementById('myDiv');
 
         div.innerHTML = 'Latitude: '             + position.coords.latitude         + '<br/>' +
@@ -26,9 +33,11 @@ function onSuccess(position) {
     //
     function onError() {
         alert('onError!');
-    }				   
-            </script>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-    </body>
+    }
+
+    </script>
+  </head>
+  <body>
+    <div id="myDiv"></div>
+  </body>
 </html>
