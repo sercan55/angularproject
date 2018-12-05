@@ -18,7 +18,7 @@
                   myDiv.innerHTML = position.coords.latitude;
                   var long = position.coords.longitude;
               }, function (err) {
-                  console.log(err.code + " " + err.message);
+                  myDiv.innerHTML = err.code + " " + err.message;
               });
     }
 
