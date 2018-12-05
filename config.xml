@@ -18,6 +18,10 @@
 	
     <preference name="permission" value="none" />
 	
+	    <plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  />
+ 
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+	
     <!-- to enable individual permissions use the following examples -->
 
     <!-- Customize your app and platform with the preference element. -->
@@ -109,12 +113,6 @@
     <string>107</string>
     </gap:config-file>
 	
-	    <gap:config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-            <uses-feature android:name="android.hardware.location.gps" />
-        </gap:config-file>
-
 
     <access origin="*"/>
 
