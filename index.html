@@ -31,8 +31,8 @@
 
     // Show an alert if there is a problem getting the geolocation
     //
-    function onError() {
-        alert('onError!');
+    function onError(eror) {
+        div.innerHTML = eror.message + eror.code ;
     }
 
     </script>
