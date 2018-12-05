@@ -8,7 +8,16 @@
 		    <script type="text/javascript" charset="utf-8">
 				document.addEventListener("deviceready", onDeviceReady, false);
                  function onDeviceReady() { 
-                    window.open('https://testoim.uedas.com.tr', '_self ', 'location=no'); 
+				 var Permission = window.plugins.Permission
+ 
+// verify grant for a permission
+var permission = 'android.permission.RECORD_AUDIO'
+Permission.has(permission, function(results) {
+    if (results[permission]) {
+        window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
+    }
+}, alert)
+                    
                    }					
             </script>
         </div>
