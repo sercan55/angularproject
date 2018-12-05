@@ -12,28 +12,16 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        var posOptions = { timeout: 35000, enableHighAccuracy: true, maximumAge: 5000 };
+            navigator.geolocation
+              .getCurrentPosition(function(position) {
+                  myDiv.innerHTML = position.coords.latitude;
+                  var long = position.coords.longitude;
+              }, function (err) {
+                  console.log(err.code + " " + err.message);
+              });
     }
 
-    // Display `Position` properties from the geolocation
-    //
-    function onSuccess(position) {
-        var div = document.getElementById('myDiv');
-
-        div.innerHTML = 'Latitude: '             + position.coords.latitude         + '<br/>' +
-                        'Longitude: '            + position.coords.longitude        + '<br/>' +
-                        'Altitude: '             + position.coords.altitude         + '<br/>' +
-                        'Accuracy: '             + position.coords.accuracy         + '<br/>' +
-                        'Altitude Accuracy: '    + position.coords.altitudeAccuracy + '<br/>' +
-                        'Heading: '              + position.coords.heading          + '<br/>' +
-                        'Speed: '                + position.coords.speed            + '<br/>';
-    }
-
-    // Show an alert if there is a problem getting the geolocation
-    //
-    function onError(error) {
-        div.innerHTML = eror.message + eror.code ;
-    }
 
     </script>
   </head>
