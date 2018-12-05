@@ -19,11 +19,15 @@
     <preference name="permission" value="none" />
 	
 
-    <plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  />
- 
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+     <platform name="android">
 
-    <feature name="http://api.phonegap.com/1.0/network"/>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-feature android:name="android.hardware.location.gps" />
+        </config-file>
+
+    </platform>
 	
 
     <!-- to enable individual permissions use the following examples -->
@@ -58,7 +62,7 @@
         Define a specific version of PhoneGap to build into your app.
         <preference name="phonegap-version"       value="3.5.0" />
     -->
-<preference name="phonegap-version" value="cli-6.5.0" />
+   <preference name="phonegap-version" value="cli-6.5.0" />
 
     <!-- Plugins -->
 	
@@ -145,11 +149,6 @@
 	<allow-navigation href="https://testoim.uedas.com.tr" />
     <platform name="android">
         <allow-intent href="market:*" />
-		<config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-            <uses-feature android:name="android.hardware.location.gps" />
-        </config-file>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
