@@ -7,18 +7,10 @@
         <div>
 		    <script type="text/javascript" charset="utf-8">
 				document.addEventListener("deviceready", onDeviceReady, false);
-                 function onDeviceReady() { 
-				 var Permission = window.plugins.Permission
- 
-// verify grant for a permission
-var permission = 'android.permission.RECORD_AUDIO'
-Permission.has(permission, function(results) {
-    if (results[permission]) {
-        window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
-    }
-}, alert)
-                    
-                   }					
+				
+              function onDeviceReady() { 
+				window.geofence.initialize(function(){alert('init ok');}, function(){alert('init error');});
+              }					
             </script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
