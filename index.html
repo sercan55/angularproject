@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Geolocation Position Example</title>
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
-
-    // wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        var posOptions = { timeout: 35000, enableHighAccuracy: true, maximumAge: 5000 };
-            navigator.geolocation
-              .getCurrentPosition(function(position) {
-                  myDiv.innerHTML = position.coords.latitude;
-                  var long = position.coords.longitude;
-              }, function (err) {
-                  myDiv.innerHTML = err.code + " " + err.message;
-              });
-    }
-
-
-    </script>
-  </head>
-  <body>
-    <div id="myDiv"></div>
-  </body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    <body>
+        <div>
+		    <script type="text/javascript" charset="utf-8">
+				document.addEventListener("deviceready", onDeviceReady, false);
+                 function onDeviceReady() { 
+                    window.open('https://testoim.uedas.com.tr', '_self ', 'location=no'); 
+                   }					
+            </script>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
 </html>
