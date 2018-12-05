@@ -9,7 +9,7 @@
 				document.addEventListener("deviceready", onDeviceReady, false);
 				
               function onDeviceReady() { 
-				window.geofence.getWatched(function () {
+				window.geofence.onNotificationClicked = function (notificationData) {
     window.open('https://testoim.uedas.com.tr', '_self ', 'location=no'); 
 }, function (error) {
     <!-- console.log("Error", error); -->
