@@ -9,14 +9,9 @@
 				document.addEventListener("deviceready", onDeviceReady, false);
 				
               function onDeviceReady() { 
-			                
-			  navigator.notification.prompt(
-    'Please enter your name',  // message
-    onPrompt,                  // callback to invoke
-    'Registration',            // title
-    ['Ok','Exit'],             // buttonLabels
-    'Jane Doe'                 // defaultText
-);
+			  
+              alert("alert");              
+			  navigator.notification.alert("PhoneGap is working");
              }
               
               			 
