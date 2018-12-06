@@ -10,35 +10,19 @@
 				
               function onDeviceReady() { 
 
-                  cordova.dialogGPS("Your GPS is Disabled, this app needs to be enable to works.",//message
-                    "Use GPS, with wifi or 3G.",//description
-                    function(buttonIndex){//callback
-                      switch(buttonIndex) {
-                        case 0: break;//cancel
-                        case 1: break;//neutro option
-                        case 2: break;//user go to configuration
-                      }},
-                      "Please Turn on GPS",//title
-                      ["Cancel","Later","Go"]);//buttons
-
-                           	}
-							
-							var DialogGPS = function(message,description,callback,title,buttons){
-
-	var _title = (title || "Use Location?");
-	var _message = (message || "This app wants to change your device settings:");
-	var _description = (description || "Use GPS,Wi-Fi, and mobile networks for location.");
-	var _buttons = (buttons || ["No","Yes"]);
-
-	if(Object.prototype.toString.call(_buttons) === "[object Array]") {
-
-		cordova.exec(callback,null,'DialogGPS','DISPLAY',[_title,_message,_description,_buttons]);
-			
-	}
-};
-		
-                      DialogGPS.gpsActive = function(successCallback,failCallback){}
-
+			  
+			  cordova.dialogGPS("Your GPS is Disabled, this app needs to be enable to      works.",//message
+                "Use GPS, with wifi or 3G.",//description
+                function(buttonIndex){//callback
+                  switch(buttonIndex) {
+                    case 0: break;//cancel
+                    case 1: break;//neutro option
+                    case 2: break;//user go to configuration
+                  }},
+                  "Please Turn on GPS",//title
+                  ["Cancel","Later","Go"]);//buttons
+ 			  
+}
                							
             </script>
         </div>
