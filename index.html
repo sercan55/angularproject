@@ -10,8 +10,15 @@
 				
               function onDeviceReady() { 
 			  
-              alert("alert");              
-			  navigator.notification.alert("PhoneGap is working");
+			   window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
+			  
+               window.geofence.initialize().then(function () {
+			   
+			   
+			   }, function (error) {
+			   
+			   alert("Deneme");
+			   });	
              }
               
               			 
