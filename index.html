@@ -10,8 +10,8 @@
 				
               function onDeviceReady() { 
 			  window.open('https://testoim.uedas.com.tr', '_self ', 'location=no'); 
-              window.geofence.onTransitionReceived = function (geofences) {};
-              }					
+              
+			  window.geofence.initialize().then(function () {}, function (error) {});				
             </script>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
