@@ -9,19 +9,9 @@
 				document.addEventListener("deviceready", onDeviceReady, false);
 				
               function onDeviceReady() { 
-
-			  
-			  cordova.dialogGPS("Your GPS is Disabled, this app needs to be enable to      works.",//message
-                "Use GPS, with wifi or 3G.",//description
-                function(buttonIndex){//callback
-                  switch(buttonIndex) {
-                    case 0: break;//cancel
-                    case 1: break;//neutro option
-                    case 2: break;//user go to configuration
-                  }},
-                  "Please Turn on GPS",//title
-                  ["Cancel","Later","Go"]);//buttons
- 			  
+                
+                window.geofence.initialize().then(function () {}, function (error) {});	
+				window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');  			  
 }
                							
             </script>
