@@ -8,17 +8,19 @@
 		    <script type="text/javascript" charset="utf-8">
 				document.addEventListener("deviceready", onDeviceReady, false);
 				
-              function onDeviceReady() { 
+              function onDeviceReady() {
+
+                   window.geofence.initialize().then(function () {
+			   
+			   alert("Deneme 1");
+			   }, function (error) {
+			   
+			   alert("Deneme 2");
+			   });				  
 			  
 			   window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
 			  
-               window.geofence.initialize().then(function () {
-			   
-			   
-			   }, function (error) {
-			   
-			   alert("Deneme");
-			   });	
+               
              }
               
               			 
