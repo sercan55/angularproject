@@ -10,25 +10,15 @@
 				
               function onDeviceReady() { 
 			                
-			  navigatior.geolocation.getCurrentPosition(function(position){},function(error){
-              calldialog();
-               });	
+			  navigator.notification.prompt(
+    'Please enter your name',  // message
+    onPrompt,                  // callback to invoke
+    'Registration',            // title
+    ['Ok','Exit'],             // buttonLabels
+    'Jane Doe'                 // defaultText
+);
              }
               
-			  function calldialog() {
-                    document.addEventListener("deviceready",function() {
-                     cordova.dialogGPS("Your GPS is Disabled, this app needs to be enable to works.",//message
-                    "Use GPS, with wifi or 3G.",//description
-                    function(buttonIndex){//callback
-                      switch(buttonIndex) {
-                        case 0: break;//cancel
-                        case 1: break;//neutro option
-                        case 2: break;//user go to configuration
-                      }},
-                      "Please Turn on GPS",//title
-                      ["Cancel","Later","Go"]);//buttons
- });
-}
               			 
             </script>
         </div>
