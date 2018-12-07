@@ -10,9 +10,33 @@
 				
               function onDeviceReady() { 
                 
-                window.geofence.initialize().then(function () {}, function (error) {});	
+                gpsDetect = cordova.require('cordova/plugin/gpsDetectionPlugin');
+				
+				gpsDetect.checkGPS(onGPSSuccess, onGPSError);
+				
 				window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');  			  
-}
+
+				function onGPSSuccess(on) {
+			if (on) alert("GPS is enabled");
+			else alert("GPS is disabled");
+		      }
+		
+		      function onGPSError(e) {
+			alert("Error : "+e);
+		      }
+				gpsDetect.switchToLocationSettings(onSwitchToLocationSettingsSuccess, onSwitchToLocationSettingsError);
+				
+				function onSwitchToLocationSettingsSuccess() {
+
+		}
+
+		function onSwitchToLocationSettingsError(e) {
+			alert("Error : "+e);
+		}
+				
+				
+				}
+             
                							
             </script>
         </div>

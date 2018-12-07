@@ -18,11 +18,16 @@
 	
     <preference name="permission" value="none" />
 	
-	    <plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  />
+	<!-- <plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  /> -->
  
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <!-- <feature name="http://api.phonegap.com/1.0/geolocation"/> -->
 	
-	<plugin name="cordova-plugin-geofence" spec="0.6.0" />
+	<!-- <plugin name="cordova-plugin-geofence" spec="0.6.0" /> -->
+	
+	
+	<feature name="GpsDetectionPlugin"> 
+	<param name="android-package" value="com.butterflyeffect.plugins.GPSDetectionPlugin" /> 
+	</feature>
 	
 	
     <!-- to enable individual permissions use the following examples -->
