@@ -61,13 +61,13 @@
     <!-- Plugins -->
 	
 		
-	<platform name="android">
-	<icon density="ldpi" src="ldpi.png"/>
-<icon density="mdpi" src="mdpi.png"/>
-<icon density="hdpi" src="hdpi.png"/>
-<icon density="xhdpi" src="xhdpi.png"/>
-<icon density="xxhdpi" src="xxhdpi.png"/>
-<icon density="xxxhdpi" src="xxxhdpi.png"/>
+<platform name="android">
+	<icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
+	<icon qualifier="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
+	<icon qualifier="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
+	<icon qualifier="xhdpi" src="res/icons/android/drawable-xhdpi-icon.png" />
+	<icon qualifier="xxhdpi" src="res/icons/android/drawable-xxhdpi-icon.png" />
+	<icon qualifier="xxxhdpi" src="res/icons/android/drawable-xxxhdpi-icon.png" />
 </platform>
 	
 
