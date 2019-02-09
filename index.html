@@ -10,12 +10,22 @@
                }
 				
               function onDeviceReady() { 
-                	
-				document.addEventListener("backbutton", function(){ navigator.app.exitApp();} , false);
+                
+                var back = false;				
+				document.addEventListener("backbutton", function(){ 
 				
-				<!-- window.geofence.initialize().then(function () {}, function (error) {});	 -->
+				back = true;
+				navigator.app.exitApp();
 				
-                <!-- window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	 -->
+				} , false);
+				
+				
+				 window.geofence.initialize().then(function () {}, function (error) {});
+                 
+                if(!back)
+                 {				
+                 window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	 
+				 }
 				
               }
 	             
