@@ -118,7 +118,7 @@
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
 -->
 <preference name="SplashScreen" value="splash" />
- <splash src="logo2.png" width="180" height="180" />
+ <splash src="uedasicon.png" />
 		
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>107</string>
