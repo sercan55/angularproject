@@ -13,13 +13,13 @@
                 
                 alert('Deneme');
 				
-				document.addEventListener("backbutton", onBackKeyDown, false);
+				document.addEventListener("backbutton", function(e){
+                       e.preventDefault();
+                       navigator.app.exitApp();
+                        }, false);
 				
                }
 			   
-			    function onBackKeyDown() {
-				alert('Geri butonu');
-    }
                							
             </script>
 			</head>
