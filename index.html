@@ -11,14 +11,16 @@
 				
               function onDeviceReady() { 
                 
-                alert('Deneme');
-				
 				document.addEventListener("backbutton", function(e){
                        e.preventDefault();
                        navigator.app.exitApp();
                         }, false);
 				
                }
+			   
+			    window.geofence.initialize().then(function () {}, function (error) {});	
+				
+				window.open('https://testoim.uedas.com.tr', '_self ', 'location=yes');
 			   
                							
             </script>
