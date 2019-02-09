@@ -14,29 +14,14 @@
 				document.addEventListener("backbutton", function(e){
                        e.preventDefault();
                        navigator.app.exitApp();
-					   return;
                         }, false);
-						
-				document.addEventListener("exit", function(e)
-				{
-                
-			     navigator.app.exitApp();
-                
-				}, false);		
-				
+										
 				window.geofence.initialize().then(function () {}, function (error) {});	
 				
-				window.open('https://testoim.uedas.com.tr', '_self ', 'location=yes');				
+				window.open('https://testoim.uedas.com.tr', '_blank ', 'location=yes');				
 						
                }		
 	             
-				
-				
-				
-			   
-			    
-			   
-               							
             </script>
 			</head>
 <body onload="onLoad()">
