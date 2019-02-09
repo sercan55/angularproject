@@ -23,6 +23,8 @@
      <feature name="http://api.phonegap.com/1.0/geolocation"/> 
 	
      <plugin name="cordova-plugin-geofence" spec="0.6.0" /> 
+	 
+	 <icon src="logo2.png">
 		
     <!-- to enable individual permissions use the following examples -->
 
