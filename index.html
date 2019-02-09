@@ -15,10 +15,12 @@
 				
 				window.geofence.initialize().then(function () {}, function (error) {});	
 				
-				setTimeout(function () {
-            	  window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	
-        }, 2500);
 				
+            	 var ref window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	
+				
+				ref.addEventListener('exit', function () {
+                   navigator.app.exitApp();
+              });
 								
 				}		
 		 function onBackKeyDown(e) {		
