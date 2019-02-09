@@ -22,10 +22,11 @@
 				
 				 window.geofence.initialize().then(function () {}, function (error) {});
                  
-                if(!back)
+				setTimeout(function(){ if(!back)
                  {				
                  window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	 
-				 }
+				 } }, 2500);
+                
 				
               }
 	             
