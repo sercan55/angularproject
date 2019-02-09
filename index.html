@@ -16,18 +16,22 @@
                        navigator.app.exitApp();
                         }, false);
 						
-				document.addEventListener("loadstart", function(e)
+				document.addEventListener("exit", function(e)
 				{
                 
-				window.geofence.initialize().then(function () {}, function (error) {});	
-				
-				window.open('https://testoim.uedas.com.tr', '_self ', 'location=yes');
+			     navigator.app.exitApp();
                 
 				}, false);		
-						
-
 				
-               }
+				window.geofence.initialize().then(function () {}, function (error) {});	
+				
+				window.open('https://testoim.uedas.com.tr', '_self ', 'location=yes');				
+						
+               }		
+	             
+				
+				
+				
 			   
 			    
 			   
