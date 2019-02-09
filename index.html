@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-    </head>
-    <body>
-        <div>
-		    <script type="text/javascript" charset="utf-8">
-				document.addEventListener("deviceready", onDeviceReady, false);
+        <script type="text/javascript" charset="utf-8" src="cordova.js">
+		</script>
+       <script type="text/javascript" charset="utf-8">
+ 
+			  function onLoad() {
+              document.addEventListener("deviceready", onDeviceReady, false);
+               }
 				
               function onDeviceReady() { 
                 
@@ -22,7 +23,7 @@
 }
                							
             </script>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-    </body>
+			</head>
+<body onload="onLoad()">
+  </body>
 </html>
