@@ -10,14 +10,15 @@
 				
               function onDeviceReady() { 
                 
+                document.addEventListener("backbutton", function(e){ 
+                      alert("Back Button Clicked");                 
+                      navigator.app.exitApp();
+                   }, false);
+				
                 window.geofence.initialize().then(function () {}, function (error) {});	
 				
 				window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
-                 
-				 document.addEventListener("backbutton", function(e){ 
-                      alert("Back Button Clicked");                 
-                      navigator.app.exitApp();
-                   }, false);				
+                 				
 }
                							
             </script>
