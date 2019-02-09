@@ -11,22 +11,13 @@
 				
               function onDeviceReady() { 
                 	
-				document.addEventListener("backbutton", onBackKeyDown , false);
+				document.addEventListener("backbutton", function(){ navigator.app.exitApp();} , false);
 				
-				window.geofence.initialize().then(function () {}, function (error) {});	
+				<!-- window.geofence.initialize().then(function () {}, function (error) {});	 -->
 				
+                <!-- window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	 -->
 				
-            	 var ref = window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	
-				
-				ref.addEventListener('exit', function () {
-                   navigator.app.exitApp();
-              });
-								
-				}		
-		 function onBackKeyDown(e) {		
-				e.preventDefault();
-                       navigator.app.exitApp();
-					   }
+              }
 	             
             </script>
 			</head>
