@@ -10,21 +10,21 @@
                }
 				
               function onDeviceReady() { 
-                
+                	
+				document.addEventListener("backbutton", onBackKeyDown , false);
+				
 				window.geofence.initialize().then(function () {}, function (error) {});	
 				
-			  ref deneme = window.open('https://testoim.uedas.com.tr', '_blank ', 'location=yes');				
+				setTimeout(function () {
+            	  window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	
+        }, 2500);
 				
-				document.addEventListener("backbutton", function(e){
-				       ref.close();
-                       e.preventDefault();
+								
+				}		
+		 function onBackKeyDown(e) {		
+				e.preventDefault();
                        navigator.app.exitApp();
-					   
-                        }, false);
-										
-				
-						
-               }		
+					   }
 	             
             </script>
 			</head>
