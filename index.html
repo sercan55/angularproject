@@ -6,24 +6,20 @@
        <script type="text/javascript" charset="utf-8">
  
 			  function onLoad() {
-			  window.geofence.initialize().then(function () {}, function (error) {});
-                 
-              window.open('https://testoim.uedas.com.tr', '_self', 'location=no');
-              document.addEventListener("deviceready", onDeviceReady, false);
+                 document.addEventListener("deviceready", onDeviceReady, false);
                }
 				
               function onDeviceReady() { 
+                			
+			    document.addEventListener("backbutton", function(){ navigator.app.exitApp();} , false);
                 
-                var back = false;				
-				document.addEventListener("backbutton", function(){ 
-				
-				back = true;
-				navigator.app.exitApp();
-				
-				} , false);
-				
+			    window.geofence.initialize().then(function () {}, function (error) {});
+                 
+                var win = window.open('https://testoim.uedas.com.tr', '_self', 'location=no');		
+
+                win.addEventListener("exit", function(){ navigator.app.exitApp();} , false);				
                 
-				}
+			  }
 	             
             </script>
 			</head>
