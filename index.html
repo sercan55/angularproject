@@ -14,14 +14,9 @@
 				
 				window.open('https://testoim.uedas.com.tr', '_self ', 'location=no');
                  
-				 document.addEventListener("backbutton", function(e){
-                  if($.mobile.activePage.is('#homepage')){
+				 document.addEventListener("backbutton", function(e){                  
                       e.preventDefault();
                       navigator.app.exitApp();
-                      }
-                     else {
-                     navigator.app.backHistory();
-                    }
                    }, false);				
 }
                							
