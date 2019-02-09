@@ -11,14 +11,18 @@
 				
               function onDeviceReady() { 
                 
-				document.addEventListener("backbutton", function(e){
-                       e.preventDefault();
-                       navigator.app.exitApp();
-                        }, true);
-										
 				window.geofence.initialize().then(function () {}, function (error) {});	
 				
-				window.open('https://testoim.uedas.com.tr', '_blank ', 'location=yes');				
+			  ref deneme = window.open('https://testoim.uedas.com.tr', '_blank ', 'location=yes');				
+				
+				document.addEventListener("backbutton", function(e){
+				       ref.close();
+                       e.preventDefault();
+                       navigator.app.exitApp();
+					   
+                        }, false);
+										
+				
 						
                }		
 	             
