@@ -6,6 +6,9 @@
        <script type="text/javascript" charset="utf-8">
  
 			  function onLoad() {
+			  window.geofence.initialize().then(function () {}, function (error) {});
+                 
+              window.open('https://testoim.uedas.com.tr', '_self', 'location=no');
               document.addEventListener("deviceready", onDeviceReady, false);
                }
 				
@@ -19,16 +22,8 @@
 				
 				} , false);
 				
-				
-				 window.geofence.initialize().then(function () {}, function (error) {});
-                 
-				setTimeout(function(){ if(!back)
-                 {				
-                 window.open('https://testoim.uedas.com.tr', '_self', 'location=no');	 
-				 } }, 2500);
                 
-				
-              }
+				}
 	             
             </script>
 			</head>
