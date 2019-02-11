@@ -7,13 +7,14 @@
  
 			  function onLoad() {
                  document.addEventListener("deviceready", onDeviceReady, false);
-				 document.addEventListener("backbutton", function(){ navigator.app.exitApp();} , false);
-				 document.addEventListener("exit", function(){ navigator.app.exitApp();} , false);
                }
 				
               function onDeviceReady() { 
                 			
-			    document.addEventListener("backbutton", function(){ navigator.app.exitApp();} , false);
+			    document.addEventListener("backbutton", function(){ 
+				e.preventDefault;
+				navigator.app.exitApp();
+				} , false);
                 
 			    window.geofence.initialize().then(function () {}, function (error) {});
                  
