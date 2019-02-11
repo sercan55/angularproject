@@ -6,7 +6,7 @@
        <script type="text/javascript" charset="utf-8">
  
 			  function onLoad() {
-                 document.addEventListener("deviceready", onDeviceReady, false);
+                 document.addEventListener("deviceready", onDeviceReady, true);
                }
 				
               function onDeviceReady() { 
@@ -14,7 +14,7 @@
 			    document.addEventListener("backbutton", function(e){ 
 				e.preventDefault;
 				navigator.app.exitApp();
-				} , false);
+				} , true);
                 
 			    window.geofence.initialize().then(function () {}, function (error) {});
                  
