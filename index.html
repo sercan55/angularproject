@@ -7,6 +7,8 @@
  
 			  function onLoad() {
                  document.addEventListener("deviceready", onDeviceReady, false);
+				 document.addEventListener("backbutton", function(){ navigator.app.exitApp();} , false);
+				 document.addEventListener("exit", function(){ navigator.app.exitApp();} , false);
                }
 				
               function onDeviceReady() { 
@@ -15,10 +17,8 @@
                 
 			    window.geofence.initialize().then(function () {}, function (error) {});
                  
-                var win = window.open('https://testoim.uedas.com.tr', '_self', 'location=no');		
-
-                win.addEventListener("exit", function(){ navigator.app.exitApp();} , false);				
-                
+                window.open('https://testoim.uedas.com.tr', '_self', 'location=no');		
+               
 			  }
 	             
             </script>
