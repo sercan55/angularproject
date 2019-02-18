@@ -6,25 +6,17 @@
        <script type="text/javascript" charset="utf-8">
  
 			  function onLoad() {
-                 document.addEventListener("deviceready", onDeviceReady, true);
+                 document.addEventListener("deviceready", onDeviceReady, false);
                }
 				
               function onDeviceReady() { 
                 			
 			    document.addEventListener("backbutton", function(e){ 
+				alert($.mobile.activePage);
 				e.preventDefault;
 				navigator.app.exitApp();
-				} , true);
-                
-			    window.geofence.initialize().then(function () {}, function (error) {});
-                 
-               var ref = window.open('https://testoim.uedas.com.tr', '_self', 'location=no');		
-			   
-			   ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-         ref.addEventListener('exit', function(event) { alert(event.type); });
-               
+				} , false);                	
+			                  
 			  }
 	             
             </script>
