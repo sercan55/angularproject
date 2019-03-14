@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.infopark.onlineabonelik"
-        version   = "1.0.7">
-
-    <name>UEDAS Mobil Islemler</name>
+		id = "com.limak.onlineabonelik"		
+		version   = "1.0.7">
+    <name>UEDAS Mobil Islemler </name>
 
     <description>
-        Online Abonelik, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
+        Elektrik Abonelik Bilgileri, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
     </description>
 
-    <author href="http://www.infopark.com.tr" email="bilgi@infopark.com.tr">
-        Infopark
+    <author href="http://www.uedas.com.tr/" email="app.dev@limakteknoloji.com">
+        Limak Teknoloji
     </author>
 	
-    <preference name="permission" value="none" />
-	
-	 <plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  /> 
- 
-     <feature name="http://api.phonegap.com/1.0/geolocation"/> 
-	
-     <plugin name="cordova-plugin-geofence" spec="0.6.0" /> 
-	 
-		
-    <!-- to enable individual permissions use the following examples -->
+	<preference name="permission" value="none"/>
 
+    
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  />
+
+	
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
@@ -34,10 +27,9 @@
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
-    <preference name="StatusBarOverlaysWebView" value="true"/>
-    <preference name="StatusBarBackgroundColor" value="#000000"/>
-    <preference name="StatusBarStyle" value="lightcontent" />
-	 <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="StatusBarOverlaysWebView"  value="true" />
+	<preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="false" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
@@ -45,23 +37,33 @@
     <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <preference name="android-windowSoftInputMode" value="adjustResize" />
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="lightcontent" />
 
-
-	
-    <feature name="StatusBar">
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+<preference name="SplashScreen" value="splash" />
+ <splash src="uedasicon.png" />
+         <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
-
-   <!--
-        Define a specific version of PhoneGap to build into your app.
-        <preference name="phonegap-version"       value="3.5.0" />
-    -->
-   <preference name="phonegap-version" value="cli-8.0.0" />
-
-   <preference name="android-minSdkVersion" value="16" />
-    <!-- Plugins -->
+<preference name="phonegap-version" value="cli-8.0.0" />
+ <preference name="android-minSdkVersion" value="16" />
+<preference name="SplashScreenDelay" value="5000" />
+    <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="uedasicon.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="uedasicon.png"              gap:platform="blackberry" />
+    <gap:splash src="uedasicon.png"         gap:platform="ios"      />
+    <gap:splash src="uedasicon.png"      gap:platform="ios"      />
+    <gap:splash src="uedasicon.png" gap:platform="ios"      />
+    <gap:splash src="uedasicon.png"           gap:platform="ios"     />
+    <gap:splash src="uedasicon.png"          gap:platform="ios"      />
+    <gap:splash src="uedasicon.png"      gap:platform="winphone" />
 	
-		
+	<!-- <engine -->
+ <!-- name="ios" -->
+ <!-- spec="~4.4.0"/> -->
 <platform name="android">
 	<icon qualifier="ldpi" src="drawable-ldpi.png" />
 	<icon qualifier="mdpi" src="drawable-mdpi.png" />
@@ -70,69 +72,27 @@
 	<icon qualifier="xxhdpi" src="drawable-xxhdpi.png" />
 	<icon qualifier="xxxhdpi" src="drawable-xxxhdpi.png" />
 </platform>
-	
+<platform name="ios">
+	 <icon src="icon.png" gap:platform="ios" />
+     <icon src="icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />  
+     <icon src="icon-72-2x.png"         gap:platform="ios"        width="144" height="144" /> 
+	 <icon src="icon-57.png" width="57" height="57" gap:platform="ios" /> 
+	 <icon src="icon-57@2x.png" width="114" height="114" gap:platform="ios" /> 
+	 <icon src="icon-72.png" width="72" height="72" gap:platform="ios" /> 
+	 <icon src="icon-72@2x.png" width="152" height="152" gap:platform="ios" /> 
+	 <icon src="icon-76.png" width="76" height="76" gap:platform="ios" />
+	 <icon src="icon-76@2x.png" width="152" height="152" gap:platform="ios" /> 
+	 <icon src="icon-120.png" width="120" height="120" gap:platform="ios" /> 
+	 <icon src="icon-152.png" width="152" height="152" gap:platform="ios" /> 
+</platform>
 
-    <!-- Core plugins -->
-	<!--
-    <gap:plugin name="org.apache.cordova.battery-status" />
-    <gap:plugin name="org.apache.cordova.camera" />
-    <gap:plugin name="org.apache.cordova.media-capture" />
-    <gap:plugin name="org.apache.cordova.console" />
-    <gap:plugin name="org.apache.cordova.contacts" />
-    <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.device-motion" />
-    <gap:plugin name="org.apache.cordova.device-orientation" />
-    <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="org.apache.cordova.file" />
-    <gap:plugin name="org.apache.cordova.file-transfer" />
-    <gap:plugin name="org.apache.cordova.geolocation" />
-    <gap:plugin name="org.apache.cordova.globalization" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
-    <gap:plugin name="org.apache.cordova.media" />
-    <gap:plugin name="org.apache.cordova.network-information" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" />
-	-->
-
-    <!-- Third party plugins -->
-    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
-    <!--
-        <gap:plugin name="com.phonegap.plugins.barcodescanner" />
-    -->
-
-    <!-- Define app icon for each platform. -->
-    
-
-    <!-- Define app splash screen for each platform. -->
-	<!--
-    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
-    <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
-    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
-    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
-    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
-    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
-    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
--->
-<preference name="SplashScreen" value="splash" />
- <splash src="uedasicon.png" />
-		
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>107</string>
+    <string>109</string>
     </gap:config-file>
-	
-
     <access origin="*"/>
-
-
-		 	 <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" /> 
-	      <gap:plugin name="cordova-plugin-splashscreen" source="npm" /> 
-	
-	 <plugin name="cordova-plugin-whitelist" source="npm" spec="1.1.0" />
-    <allow-intent href="http://*/*" />
+    
+	<allow-navigation href="https://www.google.com/recaptcha/*" />
+  <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
@@ -140,9 +100,12 @@
     <allow-intent href="geo:*" />
 	<allow-navigation href="https://testoim.uedas.com.tr" />
     <platform name="android">
+	   <plugin name="cordova-plugin-geofence" spec="0.6.0" />	
+	    <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
+	<preference name="DisallowOverscroll" value="true" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>

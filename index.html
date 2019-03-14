@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script type="text/javascript" charset="utf-8" src="cordova.js">
-		</script>
-       <script type="text/javascript" charset="utf-8">
- 
-			  function onLoad() {
-                 document.addEventListener("deviceready", onDeviceReady, false);
-               }
-				
-              function onDeviceReady() { 
-                			
-			    document.addEventListener("backbutton", onbackbutton , false);  
-
-              	window.geofence.initialize().then(function () {}, function (error) {});
-                 
-                window.open('https://testoim.uedas.com.tr', '_system', 'location=no');		
-			  }
-			  
-			  function onbackbutton(e){
-			    e.preventDefault;
-				navigator.app.exitApp();
-			  }
-	             
-            </script>
-			</head>
-<body onload="onLoad()">
-  </body>
-</html>
+<script> 
+location.href = "https://testoim.uedas.com.tr"; 
+ //window.location = "https://online.limakuludag.com.tr/"; 
+</script> 
