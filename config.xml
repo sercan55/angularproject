@@ -54,7 +54,7 @@
     <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="uedasicon.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="uedasicon.png"              gap:platform="blackberry" />
-    <gap:splash src="uedasicon.png"         gap:platform="ios"      />
+    <gap:splash src="icon-yeni.png"         gap:platform="ios"      />
     <gap:splash src="uedasicon.png"      gap:platform="winphone" />
 	
 	<!-- <engine -->
