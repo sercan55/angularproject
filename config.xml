@@ -73,6 +73,7 @@
 	<icon qualifier="xxxhdpi" src="drawable-xxxhdpi.png" />
 </platform>
 <platform name="ios">
+<icon src="icon.png" gap:platform="ios" />
   <icon src="icon-2732.png" width="2732" height="2732" gap:platform="ios" /> 
 </platform>
 
