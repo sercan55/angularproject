@@ -109,9 +109,6 @@
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
-	<plugin name="cordova-plugin-googlemaps">
-    <variable name="API_KEY_FOR_IOS" value="AIzaSyB9UTK6VP4ec0CWI6fCDyGIMANjg7-2RUs" />
-  </plugin>
 	<preference name="DisallowOverscroll" value="true" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
