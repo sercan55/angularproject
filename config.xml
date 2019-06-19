@@ -42,7 +42,7 @@
     <preference name="StatusBarStyle" value="lightcontent" />
  <preference name="android-targetSdkVersion" value="28" /> 
 	<!-- <gap:plugin name="cordova-plugin-splashscreen" source="npm" />  -->
- <preference name="SplashScreen" value="splash" />
+ <!-- <preference name="SplashScreen" value="splash" />  -->
  <splash src="uedasicon.png" platform="android" /> 
 	 <splash src= "Default@2x~universal~anyany.png" platform="ios" /> 
          <feature name="StatusBar">
