@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
 		id = "com.limak.onlineabonelik"		
-		version   = "1.0.2"
+		version   = "1.0.1"
 		ios-CFBundleVersion="1.0.3"
 		versionCode="1.0.2">
     <name>UEDAS Mobil Islemler </name>
@@ -48,7 +48,7 @@
          <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
-<preference name="phonegap-version" value="cli-8.0.0" />
+<preference name="phonegap-version" value="cli-8.1.1" />
 <preference name="SplashScreenDelay" value="5000" />
     <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-mdpi" />
