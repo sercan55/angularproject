@@ -100,7 +100,7 @@
 	<allow-navigation href="https://online.uedas.com.tr" />
     <platform name="android">
 	<!--   <plugin name="cordova-plugin-geofence" spec="0.7.0" /> -->
-	    <plugin name="cordova-plugin-custom-geofence" spec="0.7.8" />
+	<!--      <plugin name="cordova-plugin-custom-geofence" spec="0.7.8" /> -->
 	    <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
         <allow-intent href="market:*" />
     </platform>
