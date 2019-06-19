@@ -82,7 +82,7 @@
 	 <icon src="icon-76@2x.png" width="152" height="152" gap:platform="ios" /> 
 	 <icon src="icon-120.png" width="120" height="120" gap:platform="ios" /> 
 	 <icon src="icon-152.png" width="152" height="152" gap:platform="ios" /> 
-	 <icon src="icon-40.png" width="40" height="40" gap:platform="ios" /> 
+	<!-- <icon src="icon-40.png" width="40" height="40" gap:platform="ios" />  -->
 	  <!-- <icon src="icon-1024.png" width="1024" height="1024" gap:platform="ios" /> -->
 </platform>
 
