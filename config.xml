@@ -72,7 +72,7 @@
 <platform name="ios">
 	 <icon src="icon.png" gap:platform="ios" />
 	
-	<splash src= "icon2732.png" gap:platform="ios" />
+	<splash src= "splash/ios/icon2732.png" gap:platform="ios" />
    <!--  <icon src="icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />  -->
    <!--  <icon src="icon-72-2x.png"         gap:platform="ios"        width="144" height="144" /> -->
 	<!-- <icon src="icon-57.png" width="57" height="57" gap:platform="ios" /> -->
