@@ -56,7 +56,7 @@
     <gap:splash src="uedasicon.png"              gap:platform="blackberry" />
   <!--  <gap:splash src="uedasicon.png"         gap:platform="ios"      /> -->
     <gap:splash src="uedasicon.png"      gap:platform="winphone" />
-	 <!--   <gap:splash src= "icon2732.png" gap:platform="ios" />  -->
+	   <gap:splash src= "icon2732.png" gap:platform="ios" />  
 	
 	<!-- <engine -->
  <!-- name="ios" -->
