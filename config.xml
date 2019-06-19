@@ -19,7 +19,7 @@
 
     
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
-	<plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  />
+	<plugin name="cordova-plugin-geolocation" spec="4.0.1" source="npm"  />
 	
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
