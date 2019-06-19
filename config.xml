@@ -43,7 +43,7 @@
  <preference name="android-targetSdkVersion" value="28" /> 
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 <preference name="SplashScreen" value="splash" />
- <splash src="uedasicon.png" />
+ <!--<splash src="uedasicon.png" />  -->
          <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
