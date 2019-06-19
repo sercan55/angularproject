@@ -2,7 +2,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
 		id = "com.limak.onlineabonelik"		
-		version   = "1.0.7">
+		version   = "1.0.1"
+		ios-CFBundleVersion="1.0.3"
+		versionCode="1.0.2">
     <name>UEDAS Mobil Islemler </name>
 
     <description>
@@ -18,7 +20,6 @@
     
     <feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<plugin name="cordova-plugin-geolocation" spec="2.4.2" source="npm"  />
-
 	
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -55,10 +56,6 @@
     <gap:splash src="uedasicon.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="uedasicon.png"              gap:platform="blackberry" />
     <gap:splash src="uedasicon.png"         gap:platform="ios"      />
-    <gap:splash src="uedasicon.png"      gap:platform="ios"      />
-    <gap:splash src="uedasicon.png" gap:platform="ios"      />
-    <gap:splash src="uedasicon.png"           gap:platform="ios"     />
-    <gap:splash src="uedasicon.png"          gap:platform="ios"      />
     <gap:splash src="uedasicon.png"      gap:platform="winphone" />
 	
 	<!-- <engine -->
@@ -71,6 +68,7 @@
 	<icon qualifier="xhdpi" src="drawable-xhdpi.png" />
 	<icon qualifier="xxhdpi" src="drawable-xxhdpi.png" />
 	<icon qualifier="xxxhdpi" src="drawable-xxxhdpi.png" />
+
 </platform>
 <platform name="ios">
 	 <icon src="icon.png" gap:platform="ios" />
@@ -84,11 +82,13 @@
 	 <icon src="icon-76@2x.png" width="152" height="152" gap:platform="ios" /> 
 	 <icon src="icon-120.png" width="120" height="120" gap:platform="ios" /> 
 	 <icon src="icon-152.png" width="152" height="152" gap:platform="ios" /> 
+	 <icon src="icon-40.png" width="40" height="40" gap:platform="ios" /> 
+	 <icon src="icon-1024.png" width="1024" height="1024" gap:platform="ios" /> 
 </platform>
 
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>109</string>
-    </gap:config-file>
+    <!-- <gap:config-file platform="ios" parent="CFBundleShortVersionString"> -->
+    <!-- <string>102</string> -->
+    <!-- </gap:config-file> -->
     <access origin="*"/>
     
 	<allow-navigation href="https://www.google.com/recaptcha/*" />
@@ -98,8 +98,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-	<allow-navigation href="https://testoim.uedas.com.tr" />
-	<access origin="http://maps.google.com" />
+	<allow-navigation href="https://online.uedas.com.tr" />
     <platform name="android">
 	   <plugin name="cordova-plugin-geofence" spec="0.6.0" />	
 	    <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
