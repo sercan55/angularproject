@@ -44,6 +44,7 @@
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 <preference name="SplashScreen" value="splash" />
  <!--<splash src="uedasicon.png" />  -->
+	 <splash src= "icon2732.png" platform="ios" /> 
          <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
@@ -56,7 +57,7 @@
     <gap:splash src="uedasicon.png"              gap:platform="blackberry" />
   <!--  <gap:splash src="uedasicon.png"         gap:platform="ios"      /> -->
     <gap:splash src="uedasicon.png"      gap:platform="winphone" />
-	   <gap:splash src= "icon2732.png" gap:platform="ios" />  
+	   
 	
 	<!-- <engine -->
  <!-- name="ios" -->
