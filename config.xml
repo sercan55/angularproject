@@ -47,7 +47,7 @@
          <feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
         </feature>
-<preference name="phonegap-version" value="cli-8.1.1" />
+<preference name="phonegap-version" value="cli-8.0.0" />
 <preference name="SplashScreenDelay" value="5000" />
     <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="uedasicon.png"       gap:platform="android" gap:qualifier="port-mdpi" />
