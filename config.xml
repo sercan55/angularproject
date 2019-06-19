@@ -40,7 +40,7 @@
     <preference name="android-windowSoftInputMode" value="adjustResize" />
     <preference name="StatusBarBackgroundColor" value="#000000"/>
     <preference name="StatusBarStyle" value="lightcontent" />
- <preference name="android-targetSdkVersion" value="25" /> 
+ <preference name="android-targetSdkVersion" value="28" /> 
 	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 <preference name="SplashScreen" value="splash" />
  <splash src="uedasicon.png" />
