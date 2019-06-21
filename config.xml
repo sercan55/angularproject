@@ -5,7 +5,7 @@
 		version   = "1.0.1"
 		ios-CFBundleVersion="1.0.3"
 		versionCode="1.0.2">
-    <name>UEDAS Mobil Islemler </name>
+    <name>UEDAS-Mobil-Islemler </name>
 
     <description>
         Elektrik Abonelik Bilgileri, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
