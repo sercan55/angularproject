@@ -41,6 +41,7 @@
     <preference name="StatusBarBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarStyle" value="lightcontent" />
  <preference name="android-targetSdkVersion" value="28" /> 
+	<preference name="CFBundleDisplayName" value="Tugce deneme" /> 
 	<!-- <gap:plugin name="cordova-plugin-splashscreen" source="npm" />  -->
  <!-- <preference name="SplashScreen" value="splash" />  -->
  <!--<splash src="uedasicon.png" platform="android" /> -->
