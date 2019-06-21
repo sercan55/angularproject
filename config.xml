@@ -5,7 +5,7 @@
 		version   = "1.0.1"
 		ios-CFBundleVersion="1.0.3"
 		versionCode="1.0.2">
-    <name>UEDAS Mobil</name>
+    <name>UEDAS Mobil Islemler</name>
 
     <description>
         Elektrik Abonelik Bilgileri, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
@@ -41,7 +41,6 @@
     <preference name="StatusBarBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarStyle" value="lightcontent" />
  <preference name="android-targetSdkVersion" value="28" /> 
-	<preference name="CFBundleDisplayName" value="Tugce deneme" /> 
 	<!-- <gap:plugin name="cordova-plugin-splashscreen" source="npm" />  -->
  <!-- <preference name="SplashScreen" value="splash" />  -->
  <!--<splash src="uedasicon.png" platform="android" /> -->
