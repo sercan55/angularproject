@@ -103,6 +103,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
 	<allow-navigation href="https://testoim.uedas.com.tr" />
+	<allow-navigation href="https://canlidestek.uedas.com.tr" />
     <platform name="android">
 	<!--   <plugin name="cordova-plugin-geofence" spec="0.7.0" /> -->
 	<!--      <plugin name="cordova-plugin-custom-geofence" spec="0.7.8" /> -->
